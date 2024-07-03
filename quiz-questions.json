@@ -1,0 +1,14 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "answers": ["Paris", "London", "Berlin", "Rome"]
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "answers": ["Earth", "Saturn", "Jupiter", "Uranus"]
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "answers": ["Vatican City", "Monaco", "Nauru", "Tuvalu"]
+    }
+  ]

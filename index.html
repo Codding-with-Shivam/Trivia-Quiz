@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quize-question.json">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Quiz Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quiz">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Quiz Website!</h1>
+            <p class="lead">Test your knowledge and compete with others.</p>
+            <hr class="my-4">
+            <p>Click on the "Quiz" button to start the quiz.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#quiz" role="button">Quiz</a>
+            </p>
+        </div>
+    </section>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://psdchallenge.psd.gov.sg/images/default-source/challenge-library/lifestyle/trivia-quiz/triviaquiz/trivia-quiz-01-main-720x400.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.signupgenius.com/cms/images/groups/100-Random-Trivia-Questions-1260x630.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/multiple-option-quiz-game-template-problem-solving-concept_1017-45303.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<div class="about">
+    <h4>About</h4>
+    <p>The primary objective of these quizzes, on top of creating brand awareness and make your product viral, is to entertain the user with games related to your brand. It doesn’t matter if the user answers the questions correctly. The important thing is that the users participate and interact with your brand. A popular way of achieving this is to employ memory tests. In these, a series of images are displayed at high speed and then you are tested by being challenged to choose the correct images from among false images.
+
+        For example, the following Summary Page is extracted from a memory test about the natural world. The promotion was organized by a museum that wanted to promote a new section dedicated to the climate of the region. The museum gave away free passes to those registered in the memory test. The users took the test and then decided if they wanted to repeat it to try and get all the answers right. Alternatively, they were given the opportunity to continue with the registration even if the answers were not all correct. The museum succeeded in making all participants aware of the importance of paying attention to the environment and the natural world around them, as well as publicizing the museum and boosting the number of visits to the new section.</p>
+</div>
+
+<!-- quiz-section.html -->
+
+<div class="quiz-container">
+    <div class="quiz-card" id="quiz-card">
+      <!-- question and answers will be loaded dynamically here -->
+    </div>
+    <button id="next-question" class="btn btn-primary">Next</button>
+    <button id="submit-quiz" class="btn btn-success" style="display: none;">Submit</button>
+  </div>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <div class="feedback-form">
+            <h1>Leave Your Feedback</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" required></textarea>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: [info@quizwebsite.com](mailto:info@quizwebsite.com)</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Quiz Website</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
